@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home | Menu</title>
+  <!-- reset all default css style of any label in broswer -->
+  <!-- <link rel="stylesheet" href="./reset.css"> -->
+  <style>
+    body {
+      width: 864px;
+      margin-left: 0;
+      overflow-x: hidden;
+    }
+
+    h1 {
+      height: 26px;
+      font-size: 28px;
+      text-align: center;
+      color: #080471;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+
+    .banner {
+      background-color: #faebd6;
+      height: 35px;
+      list-style-type: none;
+    }
+
+    ul li {
+      display: inline;
+      font-size: 16px;
+      line-height: 30px;
+      font-family: 'Microsoft YaHei';
+      margin-left: 10px;
+    }
+
+    ul li a {
+      color: blue;
+      text-decoration: none;
+    }
+
+    ul li:first-child {
+      margin-left: 24px;
+    }
+
+    a:visited {
+      color: purple;
+    }
+
+    .view-pic-box {
+      position: relative;
+      margin-top: 30px;
+      margin-left: 70px;
+      width: 760px;
+      height: 399px;
+      background-image: url('./img/image.jpg');
+      /* parallax scrolling */
+      background-attachment: fixed;
+      background-position: 43px 5px;
+      background-repeat: no-repeat;
+      background-size: 752px 552px;
+    }
+
+    #view-text {
+      position: absolute;
+      color: #fdfce0;
+      font-size: 42px;
+      margin-top: 136px;
+      margin-left: 170px;
+      font-weight: bold;
+    }
+
+    .view-button {
+      margin-top: 210px;
+      margin-left: 452px;
+      height: 35px;
+      width: 155px;
+      border: 3px double black;
+      color: black;
+      background-color: white;
+    }
+
+    .text-box {
+      margin-left: 28px;
+      margin-top: 28px;
+      color: #80067f;
+      font: bold 20px "Comic Sans MS", "Comic Sans", cursive;
+      text-align: center;
+      text-decoration-line: underline;
+      text-decoration-style: double;
+    }
+
+    .italy {
+      float: left;
+      margin-top: 20px;
+      width: 750px;
+    }
+
+    #italian-food-box {
+      position: relative;
+      margin-left: 70px;
+      width: 350px;
+      height: 270px;
+      background-color: #ffe1e0;
+    }
+
+    #italian-text-box {
+      position: relative;
+      margin-left: 64px;
+      width: 330px;
+      height: 270px;
+    }
+
+    .text1 {
+      color: #01579b;
+      font-weight: bold;
+    }
+
+    #italian-pic {
+      position: absolute;
+      width: 330px;
+      height: 250px;
+      top: 10px;
+      left: 10px;
+    }
+
+    .text-container {
+      position: absolute;
+      top: 100px;
+    }
+
+    .content-wrap {
+      float: left;
+      margin-top: 50px;
+      width: 750px;
+    }
+
+    #indian-text-box {
+      position: relative;
+      margin-left: 70px;
+      width: 330px;
+      height: 270px;
+    }
+
+    #indian-food-box {
+      position: relative;
+      float: left;
+      margin-left: 24px;
+      width: 350px;
+      height: 270px;
+      background-color: #add8e5;
+    }
+
+    #indian-pic {
+      position: absolute;
+      width: 330px;
+      height: 250px;
+      top: 10px;
+      left: 10px;
+    }
+
+    #japanese-food-box {
+      position: relative;
+      margin-left: 70px;
+      width: 350px;
+      height: 270px;
+      background-color: #ffe1e0;
+    }
+
+    #japanese-text-box {
+      position: relative;
+      margin-left: 64px;
+      width: 330px;
+      height: 270px;
+    }
+
+    #japanese-pic {
+      position: absolute;
+      width: 330px;
+      height: 250px;
+      top: 10px;
+      left: 10px;
+    }
+
+    #dessert-text-box {
+      position: relative;
+      margin-left: 70px;
+      width: 330px;
+      height: 270px;
+    }
+
+    #dessert-food-box {
+      position: relative;
+      margin-left: 24px;
+      width: 350px;
+      height: 270px;
+      background-color: #add8e5;
+    }
+
+    #dessert-pic {
+      position: absolute;
+      width: 330px;
+      height: 250px;
+      top: 10px;
+      left: 10px;
+    }
+
+    .blank {
+      position: relative;
+      margin-top: 1250px;
+      width: 100px;
+      height: 50px;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Trojan Café</h1>
+  <!-- navigation bar -->
+  <div class="banner">
+    <ul>
+      <li><a href="./HW3_home.html">Home</a></li>
+      <li><a href="HW3_home.html#italian-food-box">Italian</a></li>
+      <li><a href="HW3_home.html#indian-food-box">Indian</a></li>
+      <li><a href="HW3_home.html#japanese-food-box">Japanese</a></li>
+      <li><a href="HW3_home.html#dessert-food-box">Desserts</a></li>
+      <li><a target="_blank" href="./welcome.html">About</a></li>
+      <li><a target="_blank" href="./welcome.html">Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- view picture -->
+  <div class="view-pic-box">
+    <div id="view-text">Enjoy the Scenic View!!</div>
+    <!-- <button id="view-button"> -->
+    <button class="view-button" disabled="disabled">Book Your Reservation</button>
+  </div>
+
+  <!-- explore cuisines -->
+  <div class="text-box">Explore Our Delicious Cuisines</div>
+
+  <!-- Italy -->
+  <div class="italy" id="italian-food-box">
+    <img src="./img/italiancuisine.jpg" alt="Italian Food" id="italian-pic">
+  </div>
+  <div class="italy" id="italian-text-box">
+    <span class="text-container">
+      <span class="text1">Italy's finest:</span><br />From our Lasagna to our Protein Penne, we <br />have delicious
+      options for every taste!
+    </span>
+  </div>
+
+  <!-- India -->
+  <div class="content-wrap" id="indian-text-box">
+    <span class="text-container">
+      <span class="text1">India's Flavors:</span><br />Our dishes are blended with masterful <br />savory spices
+    </span>
+  </div>
+  <div class="content-wrap" id="indian-food-box">
+    <img src="./img/Indiancuisine.jpg" alt="Indian Food" id="indian-pic">
+  </div>
+
+  <!-- Japan -->
+  <div class="content-wrap" id="japanese-food-box">
+    <img src="./img/Japancuisine.jpg" alt="Japanese Food" id="japanese-pic">
+  </div>
+  <div class="content-wrap" id="japanese-text-box">
+    <span class="text-container">
+      <span class="text1">Japanese Cuisine:</span><br />Delicious dining options from Sake to Sushi
+    </span>
+  </div>
+
+  <!-- Dessert -->
+  <div class="content-wrap" id="dessert-text-box">
+    <span class="text-container">
+      <span class="text1">Desserts:</span><br />From Italian Tiramisu to Indian Gulab <br />Jamun
+    </span>
+  </div>
+  <div class="content-wrap" id="dessert-food-box">
+    <img src="./img/desserts.jpg" alt="Desserts" id="dessert-pic">
+  </div>
+
+  <div class="blank"></div>
+</body>
+
+</html>

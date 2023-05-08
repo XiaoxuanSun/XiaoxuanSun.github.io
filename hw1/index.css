@@ -1,0 +1,62 @@
+.navbar {
+    background-color: #555555;
+    height: 60px;
+    list-style-type: none;
+    position: sticky;
+}
+
+ul li {
+    display: inline-block;
+    width: 120px;
+    font-size: 16px;
+    line-height: 60px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+ul li span {
+    font-size: 16px;
+}
+
+ul li:hover {
+    background-color: #66ac5a;
+}
+
+.articleContainer {
+    margin: 100px 0;
+    height: 200px;
+    width: 60%;
+    border: 1px solid lightgrey;
+    display: flex;
+}
+
+.articleImg {
+    width: 30%;
+    height: 100%;
+    /* text-align: center; */
+}
+
+.articleImg img {
+    display: block;
+    margin: 2% auto;
+}
+
+.articleContent {
+    height: 100%;
+    /* background-color: blue; */
+    width: 70%;
+}
+
+.articleContent h1 {
+    font-size: 20px;
+}
+
+.articleContent h1, p {
+    margin: 2%;
+}
+
