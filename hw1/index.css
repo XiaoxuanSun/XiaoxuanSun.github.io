@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 .navbar {
     background-color: #555555;
     height: 60px;
@@ -12,6 +16,7 @@ ul li {
     line-height: 60px;
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
+    cursor: pointer;
 }
 
 ul li a {
@@ -58,5 +63,164 @@ ul li:hover {
 
 .articleContent h1, p {
     margin: 2%;
+}
+
+.checkoutContainer {
+    display: flex;
+    flex-flow: row wrap;
+    height: 600px;
+    width: 80%;
+    margin: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 200px;
+}
+
+.checkoutForm {
+    background-color: #f3f2f2;
+    flex: 3;
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 10px;
+    padding-bottom: 24px;
+}
+
+.cartInfo {
+    background-color: #f3f2f2;
+    flex: 1;
+    height: 45%;
+    padding-top: 10px;
+    padding-bottom: 24px;
+}
+
+.checkoutForm, .cartInfo {
+    margin: 20px;
+    border: 1px solid lightgrey;
+    border-radius: 4px;
+}
+
+.checkoutForm > div {
+    margin: 0 20px;
+}
+
+.cartInfo > div {
+    margin: 0 20px;
+}
+
+.billingInfo,
+.paymentInfo {
+    flex-basis: 10%;
+    flex-grow: 1;
+    height: 85%;
+}
+
+.checkoutForm .billingInfo h2 {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.checkoutForm .paymentInfo h2 {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.checkoutForm label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 1em;
+}
+
+.checkoutForm label i {
+    font-size: 0.8em;
+}
+
+.checkoutForm input[type="text"] {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 12px;
+}
+
+.stateZipPart, .cardYearCVVPart {
+    display: flex;
+    justify-content: space-between;
+}
+
+.checkboxContent {
+    display: inline-block;
+}
+
+.cardsIcon {
+    font-size: 24px;
+    margin: 20px 0 28px;
+}
+
+.colorBlue {
+    color: #010a7b;
+}
+
+.colorLightBlue {
+    color: #001ff5;
+}
+
+.colorRed {
+    color: #eb3222;
+}
+
+.colorYellow {
+    color: #f3a83c;
+}
+
+.checkboxPart label {
+    display: inline-block;
+    margin-left: 0.2em;
+}
+
+.formButton {
+    flex-basis: 100%;
+}
+
+#submitBtn {
+    width: 100%;
+    color: white;
+    cursor: pointer;
+    background-color: #555555;
+    border-radius: 4px;
+    padding: 14px 10px;
+    font-size: 1em;
+    margin: 10px 0;
+}
+
+#submitBtn:hover {
+    background-color: #66ac5a;
+}
+
+.cartInfo .cartPartTitle {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.itemPart > div {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.cartPartTitle, .itemInfo, .CartPartTotal {
+    display: flex;
+    justify-content: space-between;
+}
+
+.itemInfo a {
+    color: #4596ed;
+    text-decoration: none;
+}
+
+.itemInfo .price {
+    color: grey;
+}
+
+hr {
+    border: 1px solid lightgrey;
 }
 
